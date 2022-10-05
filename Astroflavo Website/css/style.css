@@ -1,0 +1,472 @@
+body, html{
+    background-color: #ececec;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 70px 500px 100px;
+    
+    
+}
+
+.one{
+    
+    grid-column: 2/5;   
+}
+
+.one img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    border: 2px solid orange;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.two{
+    
+    grid-column: 5/11;
+}
+
+.two ul{
+    display: flex;
+    float: right;
+    margin-top: 25px;
+}
+
+.two ul li{
+    float: right;
+    list-style-type: none;
+    margin-left: 50px;
+
+}
+
+.two ul li a{
+    display: block;
+    font-weight: 600;
+    color: #232d51;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.three{
+
+    grid-column: 2/5;
+    margin-top: 50px;
+}
+
+.three h1{
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 1000;
+  margin-left: 50px;
+  padding-top: 60px;
+  line-height:35px;
+  margin-bottom: 20px;
+  
+}
+
+.three p{
+    margin-left: 50px;
+    font-size: 10px;
+    text-align: justify;
+}
+
+.three button{
+    margin-left: 50px;
+    background-color: red;
+    padding: 7px;
+    width: 100px;
+    color: #ececec;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5) ;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.four{   
+    grid-column: 6/12;
+    
+}
+
+.four img{
+     height: 350px;
+     width: 70%;
+     display: block;
+     margin-top: 70px;
+     margin-left: 30px;
+     border-radius: 200px;
+}
+
+.five{
+    background-color: orange;
+    grid-column: 2/6;
+   border-start-start-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5) ;
+}
+
+.five h3{
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 50px;
+    padding-top: 0px;
+    line-height:20px;
+    
+
+}
+
+.five p{
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 50px;
+   
+}
+
+.six{
+    background-color: orange;
+    grid-column: 6/11;
+    border-start-end-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5) ;
+    
+}
+
+.six h3{
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 50px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.six input{
+    padding: 8px;
+    margin-left: 50px;
+    border-radius: 5px;
+    border:1px solid red;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5) ;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    margin-bottom: 15px;
+}
+
+.six button{
+    background-color: red;
+    padding: 7px;
+    width: 100px;
+    color: #ececec;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5) ;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    margin-left: 0px;
+}
+
+@media (max-width: 500px ){
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 100px 200px 250px 70px;
+        
+        
+     }
+    
+       .one{
+         grid-column: 1/4;
+        position: relative;
+       }
+    
+    .one img{
+        margin-top: 10px;
+        width: 50px;
+        height: 50px;
+        margin-left: 20px;
+    }
+    
+       .two{
+       grid-column: 4/-1;
+       }
+    
+       .three{
+        grid-column: 1/-1;
+        margin-top: 0;
+       }
+    
+       .three h1{
+       margin-bottom: 0px;
+       margin-left: 20px;
+        font-size: 22px;
+        line-height: 20px;
+        padding-top: 0px;
+        
+       }
+       div span{
+        display: block;
+    }
+       .three p{
+        width: 40%;
+        font-size: 9px;
+        padding-top: 0px;
+        margin-left: 20px;
+       
+       }
+    
+       .three img{
+        display: inline;
+        width: 50%;
+        width: 120px;
+        height: 120px;
+        float: right;
+        margin-top:20px;
+        margin-right: 10px;
+        border-radius: 200px;
+       }
+    
+       .three button{
+        background-color: red;
+        font-size: 8px;
+        padding:  4px;
+        width:50px;
+        color: #ececec;
+        margin-top: 0px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, .5) ;
+        cursor: pointer;
+        transition: all 250ms ease-in-out;
+        margin-left: 20px;
+    }
+    
+       .four{
+        grid-column: 1/-1;
+       }
+    
+       .four img{
+        width: 150px;
+        height: 150px;
+        margin-top: 50px;
+        margin-left: 30px;
+        width: 80%;
+       }
+    
+       .four button{
+        background-color: brown;
+        font-size: 8px;
+        padding:  5px;
+        width:80px;
+        color: #ececec;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, .5) ;
+        cursor: pointer;
+        transition: all 250ms ease-in-out;
+        margin-left: 110px;
+       }
+    
+       .five{
+        grid-column: 1/-1;
+        
+        border-start-end-radius: 0px;
+       }
+    
+       .five h3{
+        font-size: 10px;
+        margin-left: 20px;
+        margin-top: 30px;
+        line-height: 15px;
+       }
+       .six{
+        grid-column: 1/-1;
+        border-start-end-radius: 0px;
+       }
+    
+      .six h3{
+        font-size: 12px;
+        margin-left: 20px;
+        padding-bottom: 0px;
+      } 
+    
+      .six input{
+        margin-left: 20px;
+        margin-top: 0px;
+        width: 100px;
+      }
+    
+      .six button{
+        
+        margin-top: 0px;
+    
+        
+      }
+    
+         .two ul{
+            display: none;
+         }
+    
+    
+    
+    
+    
+    
+}
+
+
+@media (max-width: 320px ) {
+ .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 200px 250px 70px;
+    
+    
+ }
+
+   .one{
+     grid-column: 1/4;
+    position: relative;
+   }
+
+.one img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+   .two{
+   grid-column: 4/-1;
+   }
+
+   .three{
+    grid-column: 1/-1;
+    margin-top: 0;
+   }
+
+   .three h1{
+   margin-bottom: 0px;
+   margin-left: 20px;
+    font-size: 22px;
+    line-height: 20px;
+    padding-top: 0px;
+    
+   }
+   div span{
+    display: block;
+}
+   .three p{
+    width: 40%;
+    font-size: 9px;
+    padding-top: 0px;
+    margin-left: 20px;
+   
+   }
+
+   .three img{
+    display: inline;
+    width: 50%;
+    width: 120px;
+    height: 120px;
+    float: right;
+    margin-top:20px;
+    margin-right: 10px;
+    border-radius: 200px;
+   }
+
+   .three button{
+    background-color: red;
+    font-size: 8px;
+    padding:  4px;
+    width:50px;
+    color: #ececec;
+    margin-top: 0px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5) ;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    margin-left: 20px;
+}
+
+   .four{
+    grid-column: 1/-1;
+   }
+
+   .four img{
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 80%;
+   }
+
+   .four button{
+    background-color: brown;
+    font-size: 8px;
+    padding:  5px;
+    width:80px;
+    color: #ececec;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5) ;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    margin-left: 110px;
+   }
+
+   .five{
+    grid-column: 1/-1;
+    
+    border-start-end-radius: 0px;
+   }
+
+   .five h3{
+    font-size: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+    line-height: 15px;
+   }
+   .six{
+    grid-column: 1/-1;
+    border-start-end-radius: 0px;
+   }
+
+  .six h3{
+    font-size: 12px;
+    margin-left: 20px;
+    padding-bottom: 0px;
+  } 
+
+  .six input{
+    margin-left: 20px;
+    margin-top: 0px;
+    width: 100px;
+  }
+
+  .six button{
+    
+    margin-top: 0px;
+
+    
+  }
+
+     .two ul{
+        display: none;
+     }
+
+
+
+
+
+}
